@@ -41,18 +41,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-              <img src={logo} className="App-logo" alt="logo" />
-              <h1 className="App-title">Bill Information System</h1>
-            </header>
-            <div className="App-tab">
-              <a className="tab-btn" href="/">Home</a>
-              <a className="tab-btn" href="/bill">Bill</a>
-              <a className="tab-btn" href="/">Legislator</a>
-              <a className="tab-btn" href="/">Senate</a>
-              <a className="tab-btn" href="/">House</a>
-            </div>
-            {this.searchAll}
-            Raw : {this.state.raw} <br/>
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Bill Information System</h1>
+        </header>
+        <div className="App-tab">
+          <a className="tab-btn" href="/">Home</a>
+          <a className="tab-btn" href="/bill">Bill</a>
+          <a className="tab-btn" href="/">Legislator</a>
+          <a className="tab-btn" href="/">Senate</a>
+          <a className="tab-btn" href="/">House</a>
+        </div>
         <Router>
           <div>
             <Route exact={true} path="/" component={Home} />

@@ -7,26 +7,20 @@ class BillList extends Component{
     super();
     autobind(this);
     this.state = {
-	      keyword: '',
-	      resultsName: '',
-	      resultsDetails: '',
-	      resultsID: '',
-	      raw: '',
-	      name: '',
-	      detail: '',
 	      bills: []
 	    }
 	}
 
-  	showAll(e){
-    console.log(this.state);
+  	componentDidMount = () => {
 		fetch(`http://localhost:3001/bills`)
 		.then((response) => { return response.json()})
 		.then((result) => {
+			console.log(result);
 			this.setState({ bills: result });
 		})
 		.catch((e) => { console.log(e); });
 
+    
     console.log(this.state.bills);
     this.forceUpdate();
   	}
@@ -34,8 +28,55 @@ class BillList extends Component{
 	render(){
 		return(
 			<div className="App">
-				{this.showAll}
-				{this.state.bills} <br/>
+				<div className="Bill">
+				{
+					this.state.bills.map((bill, i) => {
+						return(
+							<table key={i++}>
+								<th>
+									Categories
+								</th>
+								<th>
+									Information
+								</th>
+								<tr>
+									<td className="tableCat">Title</td>
+									<td>{bill.title}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Scope</td>
+									<td>{bill.scope}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Type</td>
+									<td>{bill.billtype}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Status</td>
+									<td >{bill.status}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Subject </td>
+									<td>{bill.subject}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Reading</td>
+									<td>{bill.reading}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Date Filed</td>
+									<td>{bill.datefiled}</td>
+								</tr>
+								<tr>
+									<td className="tableCat">Employee ID</td>
+									<td>{bill.empid}</td>
+								</tr>
+							</table>
+						)	
+						
+					})
+				}
+				</div>
 		    </div>
 		);
 	}
