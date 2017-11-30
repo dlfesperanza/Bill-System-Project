@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+
+.Bill {
+  height: 350px;
+  width: 700px;
+  margin: 10px auto;
+  border: 2px solid white;
+  border-radius: 15px;
+  background: white;
+  padding: 10px;
+  font-size: 16px;
+  color: #353535;
+  line-height: 1.5em;
+  overflow-y:auto;
+}
+
+.Bill-icons {
+  height: 80px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #76323F;
+  height: 125px;
+  padding: 20px;
+  color: white;
+}
+
+.App-tab {
+  background-color: #76323F;
+  height: 10px;
+  padding: 20px;
+  color: white;
+  border-color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.tab-btn {
+  width: 210px;
+  margin-top: -10px;
+  padding: 10px 20px;
+  color:#ffffff;
+  text-align: center;
+  background-color:#76323F;
+  border-radius: 5px;
+  text-decoration: none;
+  float: left;
+}
+
+.bill-btn {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  padding: 20px 20px;
+  color:#ffffff;
+  text-align: center;
+  background-color:#76323F;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 60px;
+  float: left;
+  font-size: 10px;
+}
+
+
+.tab-btn:hover, .bill-btn:hover {
+  background-color: #5e2832;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 10px 0;
+    font-family: monospace;
+    text-align: center;
+}
+
