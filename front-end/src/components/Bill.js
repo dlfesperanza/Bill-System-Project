@@ -5,12 +5,43 @@ import search from './../icons/search.png';
 import add from './../icons/add.png';
 import edit from './../icons/edit.png';
 import del from './../icons/delete.png';
+import autobind from 'react-autobind'
+import BillList from './BillList';
+import BillAdd from './BillAdd';
+import BillView from './BillView';
 
+const displayPage = (title) => {
+	if (title === "List"){
+		return <BillList />
+
+	}else if (title === "Add"){
+		return <BillAdd />
+	}else if (title === "View"){
+		return <BillView />
+
+	}
+}
 class Bill extends Component{
+	constructor(props) {
+	    super(props);
+	    autobind(this)
+	    this.state={
+	    	title: ''
+	    };
+	}
+
+  	handleClicked(e){
+	    this.setState({
+	      title: e.target.title
+	    })
+	    this.forceUpdate();
+	    displayPage(this.state.title);
+
+	}
+
 	render(){
 		return(
-			<div className="App">
-				<div className="Bill">
+			<div className="Bill">
 					<a className="bill-btn" href="/bill/list" title="List">
 						<img src={list} className="Bill-icons" alt="logo" />
 					</a>
@@ -29,9 +60,9 @@ class Bill extends Component{
 					<a className="bill-btn" href="/bill/delete" title="Delete">
 						<img src={del} className="Bill-icons" alt="logo" />
 					</a>
-				</div>
-		    </div>
+			</div>
 		);
+
 	}
 }
 
