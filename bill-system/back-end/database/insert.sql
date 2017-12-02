@@ -1,35 +1,35 @@
 insert into `legislator`
-	values(1, 'AQUILINO KIKO', 'L', 'PIMENTEL III', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATE BILL', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(1, 'AQUILINO KIKO', 'L', 'PIMENTEL III', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(2, 'SERGIO', 'R', 'OSMENA', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(2, 'SERGIO', 'R', 'OSMENA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(3, 'MIRIAM', 'DEFENSOR', 'SANTIAGO', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(3, 'MIRIAM', 'DEFENSOR', 'SANTIAGO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(4, 'LOREN', 'B', 'LEGARDA', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(4, 'LOREN', 'B', 'LEGARDA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(5, 'JINGGOY', 'P', 'EJERCITO-ESTRADA', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(5, 'JINGGOY', 'P', 'EJERCITO-ESTRADA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(6, 'TEOFISTO', '', 'GUINGONA III', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(6, 'TEOFISTO', '', 'GUINGONA III', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(7, 'RAMON', 'A', 'REVILLA JR.', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(7, 'RAMON', 'A', 'REVILLA JR.', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(8, 'FRANCIS', 'G', 'ESCUDERO', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(8, 'FRANCIS', 'G', 'ESCUDERO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(9, 'PIA', 'S', 'CAYETANO', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(9, 'PIA', 'S', 'CAYETANO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(10, 'JUAN EDGARDO', 'M', 'ANGARA', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(10, 'JUAN EDGARDO', 'M', 'ANGARA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(11, 'JOSEPH VICTOR', 'G', 'EJERCITO', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(11, 'JOSEPH VICTOR', 'G', 'EJERCITO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(12, 'ANTONIO', 'F', 'TRILLANES', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(12, 'ANTONIO', 'F', 'TRILLANES', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(13, 'GRACE', 'L', 'POE', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(13, 'GRACE', 'L', 'POE', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(14, 'MARIA LOURDES NANCY', 'S', 'Binay', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(14, 'MARIA LOURDES NANCY', 'S', 'Binay', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(15, 'MANUEL', 'M', 'LAPID', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(15, 'MANUEL', 'M', 'LAPID', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(16, 'PAOLO BENIGNO', '', 'AQUINO', 'Lorem ipsum dolor sit amet', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(16, 'PAOLO BENIGNO', '', 'AQUINO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -49,7 +49,7 @@ insert into `bill`
 	insert into `bill_author` values(3221, 4);
 	insert into `bill_author` values(3221, 5);
 	insert into `bill_author` values(3221, 6);
-	insert into `bill_subject` values(3221, 'ORGAN DONATION');	
+	insert into `bill_subject` values(3221, 'ORGAN DONATION');
 
 insert into `bill`
 	values(3222, 'SUMMARY TITLING OF REAL PROPERTIES USED AS PUBLIC SCHOOL SITES',
@@ -78,7 +78,7 @@ insert into `bill`
 	insert into `bill_author` values(3223, 14);
 	insert into `bill_author` values(3223, 15);
 	insert into `bill_author` values(3223, 16);
-	
+
 
 
 -- insert into `bill`
@@ -95,4 +95,3 @@ insert into `bill`
 
 -- insert into `bill`
 -- 	values(3227, 'title1', 'a super long body1', 'SENATE BILL', 'scope', 'pending', 'subj', '1st', curdate(), 1);
-
