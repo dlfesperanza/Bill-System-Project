@@ -40,6 +40,10 @@ exports.viewLegislators = (req, res, next) => {
 	})
 }
 
+exports.searchLegislator = (req, res, next) => {
+	coonsole.log("nyemas");
+}
+
 exports.addLegislator = (req, res, next) => {
   const data = req.body
   console.log(data.fname+" "+data.mname+" "+data.lname);
