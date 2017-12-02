@@ -11,7 +11,10 @@ module.exports = (router) => {
 	router.get('/viewBill', bill.viewBill_by_billno);									//working ... /bill?billno=<billno>
 	router.get('/senatebill', bill.viewSenateBill_by_Senator);		//working ... /senatebill?fname=<senator.fname>&lname=<senator.lname>
 	router.get('/housebill', bill.viewHouseBill_by_HouseMember);	//working ... /housebill?fname=<fname>&lname=<lname> 					//working
-
+	
+	router.post('/addLegislator', bill.addLegislator);
+	router.get('/searchLegislator', bill.searchLegislator);
+	
 	router.get('*', (req, res)=>{res.send('aaaaaaaaa')})	//catcher
 
 	return router;
