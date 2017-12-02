@@ -3,5 +3,5 @@
 Project: Legislative Bill Filing System
 <br/>
 Contributors:
-<br/>  <a href="github.com/dlfesperanza">Danna Louise Esperanza</a>
-<br/>  <a href="github.com/jonlowi">John Louie Matienzo</a>
+<br/>  <a href="https://github.com/dlfesperanza">Danna Louise Esperanza</a>
+<br/>  <a href="https://github.com/jonlowi">John Louie Matienzo</a>
