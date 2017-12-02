@@ -40,19 +40,20 @@ exports.viewLegislators = (req, res, next) => {
 	})
 }
 
-// exports.addLegislator = (req, res, next) => {
-//   const data = req.body.data
-//   console.log(data.fname+" "+data.mname+" "+data.lname);
+exports.addLegislator = (req, res, next) => {
+  const data = req.body
+  console.log(data.fname+" "+data.mname+" "+data.lname);
 
-//   const queryline = "addLegislator(?, ?, ?, ?, ?, ?, ?, ?, ?)";
-//   db.query(queryline, [data......], (err, result) => {
-//     if(!err){
-//       res.send(result);
-//     }else{
-//       res.send(err)
-//     }
-//   })
-// }
+  const queryline = "call addLegislator(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  db.query(queryline, [data.fname, data.mname, data.lname, data.bday, data.sex, data.type, 1000, data.noofterms, data.termstart], (err, result) => {
+    if(!err){
+      res.send(err);
+    }else{
+      res.send(err)
+    }
+  })
+}
+
 
 exports.viewBill_by_billno = (req, res, next) => {
 	const bill_no = req.query.billno;
