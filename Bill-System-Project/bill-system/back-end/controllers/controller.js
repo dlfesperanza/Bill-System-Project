@@ -78,9 +78,11 @@ exports.viewBills_by_year = (req, res, next) => {
 		}
 	})
 }
-exports.viewSenateBill_by_Senator = (req, res, next) => {
+
+exports.viewBills_by_type_name = (req, res, next) => {
 	const fname = req.query.fname;
 	const lname = req.query.lname;
+	const type = '%'+req.query.type+'%';
 	var op;
 	if (fname == null){
 		op = "or";
@@ -91,9 +93,9 @@ exports.viewSenateBill_by_Senator = (req, res, next) => {
 	}
 	console.log(fname + lname);
 	var queryline = "select a.* from bill a, bill_author b, (select empid from legislator where fname=? ";
-	queryline = queryline+op+" lname=?) c where a.billtype='SENATE BILL' and a.billno=b.billno and b.empid=c.empid;";
+	queryline = queryline+op+" lname=?) c where a.billtype like ? and a.billno=b.billno and b.empid=c.empid;";
 
-	db.query(queryline, [fname, lname], (err, result) => {
+	db.query(queryline, [fname, lname, type], (err, result) => {
 		if (!err){
 			res.send(result);
 		}else{
@@ -101,25 +103,49 @@ exports.viewSenateBill_by_Senator = (req, res, next) => {
 		}
 	})
 }
-exports.viewHouseBill_by_HouseMember = (req, res, next)=>{
-	const fname = req.query.fname;
-	const lname = req.query.lname;
-	var op;
-	if (fname == null){
-		op = "or";
-	}else if(lname == null) {
-		op = "or";
-	}else{
-		op = "and";
-	}
-	var queryline = "select a.* from bill a, bill_author b, (select empid from legislator where fname=? ";
-	queryline = queryline+op+" lname=?) c where a.billtype='HOUSE BILL' and a.billno=b.billno and b.empid=c.empid;";
 
-	db.query(queryline, [fname, lname], (err, result) => {
-		if (!err){
-			res.send(result);
-		}else{
-			res.send(err);
-		}
-	})
-}
+// exports.viewSenateBill_by_Senator = (req, res, next) => {
+// 	const fname = req.query.fname;
+// 	const lname = req.query.lname;
+// 	var op;
+// 	if (fname == null){
+// 		op = "or";
+// 	}else if(lname == null) {
+// 		op = "or";
+// 	}else{
+// 		op = "and";
+// 	}
+// 	console.log(fname + lname);
+// 	var queryline = "select a.* from bill a, bill_author b, (select empid from legislator where fname=? ";
+// 	queryline = queryline+op+" lname=?) c where a.billtype='SENATE BILL' and a.billno=b.billno and b.empid=c.empid;";
+
+// 	db.query(queryline, [fname, lname], (err, result) => {
+// 		if (!err){
+// 			res.send(result);
+// 		}else{
+// 			res.send(err);
+// 		}
+// 	})
+// }
+// exports.viewHouseBill_by_HouseMember = (req, res, next)=>{
+// 	const fname = req.query.fname;
+// 	const lname = req.query.lname;
+// 	var op;
+// 	if (fname == null){
+// 		op = "or";
+// 	}else if(lname == null) {
+// 		op = "or";
+// 	}else{
+// 		op = "and";
+// 	}
+// 	var queryline = "select a.* from bill a, bill_author b, (select empid from legislator where fname=? ";
+// 	queryline = queryline+op+" lname=?) c where a.billtype='HOUSE BILL' and a.billno=b.billno and b.empid=c.empid;";
+
+// 	db.query(queryline, [fname, lname], (err, result) => {
+// 		if (!err){
+// 			res.send(result);
+// 		}else{
+// 			res.send(err);
+// 		}
+// 	})
+// }
