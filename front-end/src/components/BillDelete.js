@@ -28,7 +28,7 @@ class BillDelete extends Component{
 	    .then(function (data){
 	    	console.log('Request success',data);
 	    	this.setState({ prompt: 'Delete success' });
-	    	{this.state.prompt}
+	    	console.log(this.state.prompt);
 	    })
 	    .catch(function(error){
 	    	console.log('Request failure: ',error);
