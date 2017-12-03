@@ -41,9 +41,33 @@ exports.searchLegislator = (req, res) => {
 	const l_name = req.query.lname;
 	const emp_id = req.query.empid;
 	const type_ = req.query.type;
-	// var queryline = "select * from legislator where type=?"
-	// if ty
-	db.query()
+
+	//empid has highest priority
+	//if empid is given ignore other fields and columns
+	var queryline = "select * from legislator where "
+	if (emp_id != null){
+		queryline += 'empid=' + emp_id;
+	}else{
+		if (f_name != null){
+			queryline += "fname like " + "'" + f_name + "'";
+		}if (l_name != null){
+			if (queryline != "select * from legislator where "){
+				queryline += " and ";
+			}queryline += "lname like " + "'" + l_name + "'";
+		}if (type_ != null){
+			if (queryline != "select * from legislator where "){
+				queryline += ' and ';
+			}queryline += 'type like ' + "'" + type_ + "'";
+		}
+	}
+
+	db.query(queryline, [], (err, result) => {
+		if (!err){
+			res.send(result);
+		}else{
+			res.send(false);
+		}
+	});
 	console.log("search function")
 }
 

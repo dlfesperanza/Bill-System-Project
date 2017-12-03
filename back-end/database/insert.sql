@@ -299,8 +299,6 @@ insert into bill (billno, title, body, billtype, scope, status, reading, datefil
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (99, 'sed interdum venenatis', 'maecenas pulvinar lobortis est phasellus sit', 'SenateBill', 'Municipal', 'Passed', '1st', '9/21/2012');
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (100, 'phasellus id sapien in sapien iaculis congue', 'libero quis orci nullam molestie nibh in lectus', 'SenateBill', 'National', 'Passed', '3rd', '5/24/2004');
 
-update bill set reading='' where status like 'passed';
-
 insert into bill_author (billno, empid) values (84, 28);
 insert into bill_author (billno, empid) values (31, 22);
 insert into bill_author (billno, empid) values (65, 98);
