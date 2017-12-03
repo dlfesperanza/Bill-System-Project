@@ -12,10 +12,10 @@ class BillAdd extends Component{
 		    billtype:'',
 		    scope:'',
 		    status:'',
-		    subject:'',
 		    reading:'',
 		    datefiled:'',
-		    empno:''
+		    prompt: '',
+		    newtitle: ''
 	    };
   	}
 
@@ -27,7 +27,8 @@ class BillAdd extends Component{
 
   	handleTitleChange(e){
   		this.setState({
-  			title: e.target.value
+  			title: e.target.value,
+  			newtitle: e.target.value
   		});
   	}
 
@@ -55,12 +56,6 @@ class BillAdd extends Component{
   		});
   	}
 
-  	handleSubjectChange(e){
-  		this.setState({
-  			subject: e.target.value
-  		});
-  	}
-
   	handleReadingChange(e){
   		this.setState({
   			reading: e.target.value
@@ -82,11 +77,15 @@ class BillAdd extends Component{
 	      body:JSON.stringify(this.state)
 	    })
 	    .then(function (data){
-	      console.log('Request success',data);
+	      	console.log('Request success',data);
 	    })
 	    .catch(function(error){
 	      console.log('Request failure: ',error);
 	    });
+
+	    this.setState({
+			prompt: 'Successfully added!'
+		})
 
 	    console.log(this.state);
 	    this.forceUpdate();
@@ -97,18 +96,32 @@ class BillAdd extends Component{
 		return(
 			<div className="App">
 				<div className="Bill">
+				<h4>Add Bill</h4>
 				<form>
-					<input onChange={this.handleBillNoChange} className="inputField" placeholder="Bill No."/>
+					<input onChange={this.handleBillNoChange} className="inputField" placeholder="Bill No." maxlength="4"/>
 					<input onChange={this.handleTitleChange} className="inputField" placeholder="Title"/>
 					<input onChange={this.handleBodyChange} className="inputField" placeholder="Body"/>
-					<input onChange={this.handleBillTypeChange} className="inputField" placeholder="Bill Type"/>
+					<select className="dropdown" id="dd1" onChange={this.handleBillTypeChange}>
+						<option selected disabled> Bill Type </option>
+						<option value="Senate Bill"> Senate Bill </option>
+						<option value="House Bill"> House Bill </option>
+					</select>
 					<input onChange={this.handleScopeChange} className="inputField"  placeholder="Scope"/>
-					<input onChange={this.handleStatusChange} className="inputField" placeholder="Status"/>
-					<input onChange={this.handleSubjectChange} className="inputField" placeholder="Subject"/>
-					<input onChange={this.handleReadingChange} className="inputField" placeholder="Reading"/>
-					<input onChange={this.handleDateChange} className="inputField" placeholder="Date Filed"/>
-					<input onChange={this.handleEmpIDChange} className="inputField" placeholder="Employee ID"/>
+					<select className="dropdown" id="dd1" onChange={this.handleStatusChange}>
+						<option selected disabled> Status </option>
+						<option value="Pending"> Pending </option>
+						<option value="Passed"> Passed </option>
+					</select>
+					<select className="dropdown" id="dd1" onChange={this.handleReadingChange}>
+						<option selected disabled> Reading </option>
+						<option value="1st"> 1st </option>
+						<option value="2nd"> 2nd </option>
+						<option value="3rd"> 3rd </option>
+					</select>
+					<input onChange={this.handleDateChange} className="inputField" type="date" placeholder="Date Filed"/>
 					<input onClick={this.handleSubmit} className="submit" type="button" value="Submit" />
+					<a href="/bill/edit" className="back">Back</a>
+					<p className="prompt">{this.state.prompt}</p>
 				</form>
 				</div>
 		    </div>

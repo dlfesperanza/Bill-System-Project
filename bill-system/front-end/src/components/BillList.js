@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import autobind from 'react-autobind'
-import axios from 'axios';
+import autobind from 'react-autobind';
 
 class BillList extends Component{
 	constructor(){
@@ -33,44 +32,16 @@ class BillList extends Component{
 					this.state.bills.map((bill, i) => {
 						return(
 							<table key={i++}>
-								<th>
-									Categories
-								</th>
-								<th>
-									Information
-								</th>
-								<tr>
-									<td className="tableCat">Title</td>
-									<td>{bill.title}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Scope</td>
-									<td>{bill.scope}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Type</td>
-									<td>{bill.billtype}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Status</td>
-									<td >{bill.status}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Subject </td>
-									<td>{bill.subject}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Reading</td>
-									<td>{bill.reading}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Date Filed</td>
-									<td>{bill.datefiled}</td>
-								</tr>
-								<tr>
-									<td className="tableCat">Employee ID</td>
-									<td>{bill.empid}</td>
-								</tr>
+								<th>Category</th>
+								<th>Information</th>
+								<tr><td className="tableCat">Bill ID</td><td>{bill.billno}</td></tr>
+								<tr><td className="tableCat">Title</td><td>{bill.title}</td></tr>
+								<tr><td className="tableCat">Body</td><td>{bill.body}</td></tr>
+								<tr><td className="tableCat">Scope</td><td>{bill.scope}</td></tr>
+								<tr><td className="tableCat">Type</td><td>{bill.billtype}</td></tr>
+								<tr><td className="tableCat">Status</td><td >{bill.status}</td></tr>
+								<tr><td className="tableCat">Reading</td><td>{bill.reading}</td></tr>
+								<tr><td className="tableCat">Date Filed</td><td>{bill.datefiled}</td></tr>
 							</table>
 						)	
 						

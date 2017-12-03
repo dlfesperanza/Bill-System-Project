@@ -12,8 +12,8 @@ class Bill extends Component{
 		return(
 			<div className="App">
 				<div className="Bill">
-					<h4>Bill</h4>
-					<a className="bill-btn" href="/bill/list" title="List">
+					<h4>Legislator</h4>
+					<a className="bill-btn" href="/legislator/list" title="List">
 						<img src={list} className="Bill-icons" alt="logo" />
 					</a>
 					<a className="bill-btn" href="/bill/view" title="View">
@@ -22,7 +22,7 @@ class Bill extends Component{
 					<a className="bill-btn" href="/bill/search" title="Search">
 						<img src={search} className="Bill-icons" alt="logo" />
 					</a>
-					<a className="bill-btn" href="/bill/add" title="Add">
+					<a className="bill-btn" href="/legislator/add" title="Add">
 						<img src={add} className="Bill-icons" alt="logo" />
 					</a>
 					<a className="bill-btn" href="/bill/edit" title="Edit">

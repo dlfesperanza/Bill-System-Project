@@ -10,7 +10,7 @@
   border-radius: 15px;
   background: white;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
   color: #353535;
   line-height: 1.5em;
   overflow-y:auto;
@@ -44,8 +44,23 @@
   font-size: 1.5em;
 }
 
+.bill-btn {
+  width: 100px;
+  height: 100px;
+  margin-top: 30px;
+  padding: 20px 20px;
+  color:#ffffff;
+  text-align: center;
+  background-color:#76323F;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 60px;
+  float: left;
+  font-size: 10px;
+}
+
 .tab-btn {
-  width: 210px;
+  width: 280px;
   margin-top: -10px;
   padding: 10px 20px;
   color:#ffffff;
@@ -150,15 +165,16 @@
 .tab-btn:hover, .list-btn:hover,
 .view-btn:hover, .search-btn:hover,
 .add-btn:hover, .edit-btn:hover,
-.delete-btn:hover, .submit:hover {
+.delete-btn:hover, .submit:hover,
+.bill-btn:hover, .back:hover {
   background-color: #5e2832;
 }
 
 h4 {
     font-size: 16px;
     margin: 10px 0;
-    font-family: monospace;
     text-align: center;
+    color: #76323F;
 }
 
 table {
@@ -201,6 +217,7 @@ td {
 .tableCat {
   background-color: #76323F;
   color: white;
+  width: 80px;
 }
 
 input[type=text], select {
@@ -225,6 +242,17 @@ input[type=text], select {
     font-family: monospace;
 }
 
+.inputField2 {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
 .submit {
     width: 150px;
     margin-top: 20px;
@@ -236,4 +264,37 @@ input[type=text], select {
     text-decoration: none;
     margin-left: 280px;
     float: left;
+}
+
+.back {
+    width: 110px;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color:#ffffff;
+    text-align: center;
+    background-color:#76323F;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 280px;
+    float: left;
+}
+
+.dropdown {
+      background-color:white;
+      border: 1px solid #bdc7d8;
+      border-radius: 5px;
+      padding: 12px 10px 10px 12px;
+      font-family: monospace;
+      color: #353535;
+}
+
+#dd1 {
+    width: 560px;
+    margin-left: 0px;
+}
+
+.prompt {
+    font-size: 15px;
+    margin-top: 30px;
+    float: right;
 }
