@@ -1,5 +1,8 @@
 -- BILL FILING SYSTEM
 
+
+-- drop database bill_files;
+
 create database if not exists `bill_files`;
 	use `bill_files`;
 
@@ -25,7 +28,7 @@ create table if not exists `bill`(
 	`billtype` varchar(20) not null,
 	`scope` varchar(20) not null,
 	`status` varchar(30),
-	`reading` varchar(6),
+	`reading` varchar(3),
 	`datefiled` date not null,
 	constraint `bill_billno_pk` primary key(billno)
 );
@@ -40,6 +43,9 @@ create table if not exists `bill_author`(
 	constraint `bil_author_billno_fk` foreign key(billno) references bill(billno),
 	constraint `bill_author_empid_fk` foreign key(empid) references legislator(empid)
 );
+
+
+KAILANGAN BA TALAGA TO?
 
 
 -- create table if not exists `house`(
@@ -105,14 +111,9 @@ delimiter //
 --|--		-existing na sa db yung mga pk 			  --|--
 -----------------------------------------------------------
 
-create procedure addBill(
-	billno int(6), title text, body text, billtype varchar(20),
-	scope varchar(20), status varchar(30),
-	reading varchar(6), datefiled date
-	)
+create procedure addBill(billno int(6), title text, body text, billtype varchar(20), scope varchar(20), status varchar(30),reading varchar(6), datefiled date)
 	begin
-		insert into `bill`
-		values(billno, title, body, billtype, scope, status, reading, datefiled);
+		insert into `bill` values(billno, title, body, billtype, scope, status, reading, datefiled);
 	end //
 create procedure addBillAuthor(billno int(6), empid int(6))
 	begin
@@ -192,8 +193,6 @@ create procedure deleteLegislator(emp_id int(6))
 	begin
 	-- wait fuck! paano yung mga bills na filed by legislator?
 		delete from `legislator` where empid=emp_id;
-		delete from `senator` where empid=emp_id;		-- kung wala namang emp_id sa senator wlang affected rows
-		delete from `housemember` where empid=emp_id;	-- isa lang affected either senator table or housemember table
 	end //
 
 delimiter ;
