@@ -26,65 +26,6 @@ exports.deleteBills = (req, res, next) => {
 	});
 };
 
-exports.viewLegislators = (req, res, next) => {
-	db.query('select * from legislator;', [], (err, result)=>{
-		if (!err){
-			res.send(result);
-		}else{
-			res.send(err);
-		}
-	})
-}
-
-exports.searchLegislator = (req, res) => {
-	const f_name = req.query.fname;
-	const l_name = req.query.lname;
-	const emp_id = req.query.empid;
-	const type_ = req.query.type;
-
-	//empid has highest priority
-	//if empid is given ignore other fields and columns
-	var queryline = "select * from legislator where "
-	if (emp_id != null){
-		queryline += 'empid=' + emp_id;
-	}else{
-		if (f_name != null){
-			queryline += "fname like " + "'" + f_name + "'";
-		}if (l_name != null){
-			if (queryline != "select * from legislator where "){
-				queryline += " and ";
-			}queryline += "lname like " + "'" + l_name + "'";
-		}if (type_ != null){
-			if (queryline != "select * from legislator where "){
-				queryline += ' and ';
-			}queryline += 'type like ' + "'" + type_ + "'";
-		}
-	}
-
-	db.query(queryline, [], (err, result) => {
-		if (!err){
-			res.send(result);
-		}else{
-			res.send(false);
-		}
-	});
-	console.log("search function")
-}
-
-exports.addLegislator = (req, res, next) => {
-  const data = req.body
-  console.log(data.fname+" "+data.mname+" "+data.lname);
-
-  const queryline = "call addLegislator(?, ?, ?, ?, ?, ?, ?, ?, ?)";
-  db.query(queryline, [data.fname, data.mname, data.lname, data.bday, data.sex, data.type, 1000, data.noofterms, data.termstart], (err, result) => {
-    if(!err){
-      res.send(err);
-    }else{
-      res.send(err)
-    }
-  })
-}
-
 exports.viewBill_by_billno = (req, res, next) => {
 	const bill_no = req.query.billno;
 
@@ -145,4 +86,105 @@ exports.viewBills_by_status = (req, res, next)=>{
       res.send(err)
     }
 	})
+}
+
+exports.viewLegislators = (req, res, next) => {
+	db.query('select * from legislator;', [], (err, result)=>{
+		if (!err){
+			res.send(result);
+		}else{
+			res.send(err);
+		}
+	})
+}
+
+exports.searchLegislator = (req, res) => {
+	const f_name = req.query.fname;
+	const l_name = req.query.lname;
+	const emp_id = req.query.empid;
+	const type_ = req.query.type;
+
+	//empid has highest priority
+	//if empid is given ignore other fields and columns
+	var queryline = "select * from legislator where "
+	if (emp_id != null){
+		queryline += 'empid=' + emp_id;
+	}else{
+		if (f_name != null){
+			queryline += "fname like " + "'" + f_name + "'";
+		}if (l_name != null){
+			if (queryline != "select * from legislator where "){
+				queryline += " and ";
+			}queryline += "lname like " + "'" + l_name + "'";
+		}if (type_ != null){
+			if (queryline != "select * from legislator where "){
+				queryline += ' and ';
+			}queryline += 'type like ' + "'" + type_ + "'";
+		}
+	}
+
+	queryline += ";";
+
+	db.query(queryline, [], (err, result) => {
+		if (!err){
+			res.send(result);
+		}else{
+			res.send(false);
+		}
+	});
+	console.log("search function")
+}
+
+exports.addLegislator = (req, res, next) => {
+  const data = req.body
+  console.log(data.fname+" "+data.mname+" "+data.lname);
+
+  const queryline = "call addLegislator(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+  db.query(queryline, [data.fname, data.mname, data.lname, data.bday, data.sex, data.type, 1000, data.noofterms, data.termstart], (err, result) => {
+    if(!err){
+      res.send(err);
+    }else{
+      res.send(err)
+    }
+  })
+}
+
+exports.editLegislator = (req, res, next) => {
+    const empid = req.body.empid;
+    const fname = req.body.fname;
+    const mname = req.body.mname;
+    const lname = req.body.lname;
+    const type = req.body.type;
+    const sal = req.body.sal;
+
+    var queryline = "update legislator set ";
+
+    if (fname != ""){
+        queryline += "fname="+"'"+fname+"'";
+    }if (mname != ""){
+        if (queryline != "update legislator set "){
+            queryline += ", ";
+        }queryline += "mname="+"'"+mname+"'";
+    }if (lname != ""){
+        if (queryline != "update legislator set "){
+            queryline += ", ";
+        }queryline += "lname="+"'"+lname+"'";
+    }if (type != ""){
+        if (queryline != "update legislator set "){
+            queryline += ", ";
+        }queryline += "type="+"'"+type+"'";
+    }if (sal != 0){
+        if (queryline != "update legislator set "){
+            queryline += ", ";
+        }queryline += "sal="+sal;
+    }
+    queryline += " where empid="+empid+";";
+
+    db.query(queryline, [], (err, result) => {
+        if (!err){
+            res.send(result);
+        }else{
+            res.send(err);
+        }
+    })
 }
