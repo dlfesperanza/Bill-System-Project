@@ -1,35 +1,33 @@
 insert into `legislator`
-	values(101, 'AQUILINO KIKO', 'L', 'PIMENTEL III', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(1, 'AQUILINO KIKO', 'L', 'PIMENTEL III', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(102, 'SERGIO', 'R', 'OSMENA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(2, 'PAOLO BENIGNO', '', 'AQUINO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(103, 'MIRIAM', 'DEFENSOR', 'SANTIAGO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(3, 'MIRIAM', 'DEFENSOR', 'SANTIAGO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(104, 'LOREN', 'B', 'LEGARDA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(4, 'LOREN', 'B', 'LEGARDA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(105, 'JINGGOY', 'P', 'EJERCITO-ESTRADA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(5, 'JINGGOY', 'P', 'EJERCITO-ESTRADA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(106, 'TEOFISTO', '', 'GUINGONA III', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(6, 'TEOFISTO', '', 'GUINGONA III', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(107, 'RAMON', 'A', 'REVILLA JR.', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(7, 'RAMON', 'A', 'REVILLA JR.', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(108, 'FRANCIS', 'G', 'ESCUDERO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(8, 'FRANCIS', 'G', 'ESCUDERO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(109, 'PIA', 'S', 'CAYETANO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(9, 'PIA', 'S', 'CAYETANO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(110, 'JUAN EDGARDO', 'M', 'ANGARA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(10, 'JUAN EDGARDO', 'M', 'ANGARA', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(111, 'JOSEPH VICTOR', 'G', 'EJERCITO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(11, 'JOSEPH VICTOR', 'G', 'EJERCITO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(112, 'ANTONIO', 'F', 'TRILLANES', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(12, 'ANTONIO', 'F', 'TRILLANES', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(113, 'GRACE', 'L', 'POE', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(13, 'GRACE', 'L', 'POE', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(114, 'MARIA LOURDES NANCY', 'S', 'Binay', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(14, 'MARIA LOURDES NANCY', 'S', 'Binay', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 insert into `legislator`
-	values(115, 'MANUEL', 'M', 'LAPID', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(116, 'PAOLO BENIGNO', '', 'AQUINO', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+	values(15, 'MANUEL', 'M', 'LAPID', str_to_date('12-13-1943', '%c-%d-%Y'), 'M', 'SENATOR', 15000, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -77,7 +75,7 @@ insert into `bill`
 	insert into `bill_author` values(3223, 13);
 	insert into `bill_author` values(3223, 14);
 	insert into `bill_author` values(3223, 15);
-	insert into `bill_author` values(3223, 16);
+	insert into `bill_author` values(3223, 2);
 
 
 
@@ -97,21 +95,6 @@ insert into `bill`
 -- 	values(3227, 'title1', 'a super long body1', 'SENATE BILL', 'scope', 'pending', 'subj', '1st', curdate(), 1);
 
 
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (1, 'Camel', 'Leddy', 'Broadbear', '05/20/1962', 'F', 'HOUSEMEMBER', 38631, 1, '6/9/2006', '5/11/2019');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (2, 'Brok', 'Minocchi', 'Claussen', '06/08/1943', 'M', 'SENATOR', 35919, 2, '10/15/2004', '11/7/2015');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (3, 'Huey', 'Werendell', 'Bridell', '01/23/1932', 'M', 'SENATOR', 24688, 1, '5/15/2014', '7/8/2013');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (4, 'Luca', 'Pantling', 'Robet', '11/12/1956', 'M', 'HOUSEMEMBER', 38749, 1, '6/1/2013', '3/13/2007');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (5, 'Gina', 'Sabbin', 'Conor', '02/20/1951', 'F', 'HOUSEMEMBER', 15302, 2, '1/29/2009', '5/18/2017');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (6, 'Gunar', 'Clendening', 'Danielis', '11/28/1937', 'M', 'SENATOR', 37688, 1, '11/3/2006', '12/9/2009');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (7, 'Candra', 'Mollnar', 'Raynton', '06/14/1964', 'F', 'SENATOR', 23408, 0, '5/26/2016', '7/27/2017');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (8, 'Cherri', 'Hempshall', 'Vowells', '08/11/1930', 'F', 'HOUSEMEMBER', 38902, 0, '11/28/2008', '1/1/2013');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (9, 'Kimbell', 'Crombleholme', 'Bratton', '11/09/1959', 'M', 'SENATOR', 14975, 1, '4/7/2011', '4/17/2006');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (10, 'Helsa', 'Frankcombe', 'Demead', '06/23/1939', 'F', 'SENATOR', 30057, 1, '12/24/2012', '1/24/2011');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (11, 'Cullan', 'Guidi', 'Gueste', '11/18/1958', 'M', 'SENATOR', 21748, 1, '7/30/2012', '8/11/2013');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (12, 'Sadie', 'Birtles', 'Macon', '07/04/1961', 'F', 'HOUSEMEMBER', 25742, 0, '2/11/2007', '8/11/2014');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (13, 'Ardine', 'Girardengo', 'Fraschini', '10/21/1947', 'F', 'HOUSEMEMBER', 30289, 0, '6/14/2006', '9/30/2017');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (14, 'Evania', 'Calafate', 'Tague', '11/29/1950', 'F', 'SENATOR', 20769, 2, '3/30/2011', '1/24/2016');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (15, 'Patin', 'Nisbet', 'Lenthall', '09/09/1937', 'M', 'HOUSEMEMBER', 20247, 1, '5/4/2016', '3/30/2009');
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (16, 'Em', 'Geillier', 'Stile', '05/22/1970', 'F', 'HOUSEMEMBER', 29185, 1, '12/30/2007', '7/17/2004');
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (17, 'Cory', 'Stockney', 'Charrisson', '10/13/1955', 'F', 'HOUSEMEMBER', 27416, 2, '4/1/2011', '8/22/2017');
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (18, 'Mariska', 'Carbry', 'Tills', '06/21/1957', 'F', 'HOUSEMEMBER', 33364, 2, '6/7/2014', '12/29/2006');
