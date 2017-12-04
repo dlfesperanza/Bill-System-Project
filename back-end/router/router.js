@@ -13,6 +13,7 @@ module.exports = (router) => {
 	router.get('/bill_by', bill.viewBills_by_type_name);		//working ... /senatebill?fname=<senator.fname>&lname=<senator.lname>
 
 	router.post('/addLegislator', bill.addLegislator);
+	router.post('/editLegislator', bill.editLegislator);
 	router.get('/searchLegislator', bill.searchLegislator);
 	router.get('/legislators', bill.viewLegislators);
 
