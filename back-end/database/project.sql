@@ -7,7 +7,7 @@ create database if not exists `bill_files`;
 	use `bill_files`;
 
 create table if not exists `legislator`(
-	`empid` int(6) not null,
+	`empid` int(6) not null auto_increment,
 	`fname` varchar(20),
 	`mname` varchar(20),
 	`lname` varchar(20),
@@ -112,23 +112,22 @@ delimiter //
 -----------------------------------------------------------
 
 create procedure addBill(billno int(6), title text, body text, billtype varchar(20), scope varchar(20), status varchar(30),reading varchar(6), datefiled date)
-	begin
-		insert into `bill` values(billno, title, body, billtype, scope, status, reading, datefiled);
-	end //
+begin
+insert into `bill` values(billno, title, body, billtype, scope, status, reading, datefiled);
+end //
 create procedure addBillAuthor(billno int(6), empid int(6))
-	begin
-		insert into `bill_author` values(billno, empid);
-	end //
+begin
+insert into `bill_author` values(billno, empid);
+end //
 create procedure addBillSubject(billno int(6), subject varchar(20))
-	begin
-		insert into `bill_subject` values(billno, subject);
-	end //
+begin
+insert into `bill_subject` values(billno, subject);
+end //
 
 create procedure addLegislator(fname varchar(20), mname varchar(20),lname varchar(20),bday date,sex varchar(1), type varchar(15),sal int(7), noofterms int(2),termstart date)
-
-	begin
-		insert into `legislator` values((select a.empid from (select empid from legislator order by empid desc limit 1) a)+1,fname, mname, lname, bday, sex, type, sal, noofterms, termstart, adddate(termstart, interval 6 year));
-	end //
+begin
+insert into `legislator`(fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values(fname, mname, lname, bday, sex, type, sal, noofterms, termstart, adddate(termstart, interval 6 year));
+end //
 
 -- create procedure addSenate(
 -- 	congressno int(6),
