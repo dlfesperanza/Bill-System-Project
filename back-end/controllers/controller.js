@@ -111,11 +111,11 @@ exports.searchLegislator = (req, res) => {
 		queryline += 'empid=' + emp_id;
 	}else{
 		if (f_name != null){
-			queryline += "fname like " + "'" + f_name + "'";
+			queryline += "fname like " + "'%" + f_name + "%'";
 		}if (l_name != null){
 			if (queryline != "select * from legislator where "){
 				queryline += " and ";
-			}queryline += "lname like " + "'" + l_name + "'";
+			}queryline += "lname like " + "'%" + l_name + "%'";
 		}if (type_ != null){
 			if (queryline != "select * from legislator where "){
 				queryline += ' and ';
