@@ -84,11 +84,10 @@ insert into `bill`
 	insert into `bill_author` values(3224, 16);
 	insert into `bill_subject` values(3224, "R.A. No. 8972");
 
-
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (17, 'Cory', 'Stockney', 'Charrisson', '10/13/1955', 'F', 'HOUSEMEMBER', 19550, 2, '4/1/2011', '8/22/2017');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (18, 'Mariska', 'Carbry', 'Tills', '06/21/1957', 'F', 'HOUSEMEMBER', 19550, 2, '6/7/2014', '12/29/2006');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (19, 'Lari', 'Gladden', 'Haworth', '09/23/1956', 'F', 'SENATOR', 19550, 2, '8/9/2007', '11/3/2011');
-insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (20, 'Aldous', 'Greig', 'Forbes', '10/22/1954', 'M', 'SENATOR', 19550, 0, '1/22/2014', '1/28/2007');
+insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (17, 'Cory', 'Stockney', 'Charrisson', '10/13/1955', 'F', 'HOUSEMEMBER', 27416, 2, '4/1/2011', '8/22/2017');
+insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (18, 'Mariska', 'Carbry', 'Tills', '06/21/1957', 'F', 'HOUSEMEMBER', 33364, 2, '6/7/2014', '12/29/2006');
+insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (19, 'Lari', 'Gladden', 'Haworth', '09/23/1956', 'F', 'SENATOR', 25672, 2, '8/9/2007', '11/3/2011');
+insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (20, 'Aldous', 'Greig', 'Forbes', '10/22/1954', 'M', 'SENATOR', 10739, 0, '1/22/2014', '1/28/2007');
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (21, 'Natassia', 'Fetherston', 'Klaiser', '07/21/1969', 'F', 'SENATOR', 22617, 1, '12/2/2011', '3/8/2014');
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (22, 'Mel', 'Moyles', 'Trussler', '08/26/1952', 'M', 'HOUSEMEMBER', 13043, 0, '10/3/2009', '12/23/2009');
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (23, 'Liesa', 'Genney', 'Senechell', '08/29/1939', 'F', 'HOUSEMEMBER', 31114, 0, '12/12/2007', '3/26/2012');

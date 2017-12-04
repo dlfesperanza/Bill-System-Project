@@ -16,6 +16,9 @@ import LegislatorAdd from './LegislatorAdd';
 import LegislatorList from './LegislatorList';
 import LegislatorSearch from './LegislatorSearch';
 
+import Senate from './Senate';
+import House from './House';
+
 import axios from 'axios';
 import autobind from 'react-autobind';
 import  { BrowserRouter as Router, Route} from 'react-router-dom'
@@ -73,6 +76,9 @@ class App extends Component {
             <Route exact={true} path="/legislator/add" component={LegislatorAdd} />
             <Route exact={true} path="/legislator/list" component={LegislatorList} />
             <Route exact={true} path="/legislator/search" component={LegislatorSearch} />
+
+            <Route exact={true} path="/senate" component={Senate} />
+            <Route exact={true} path="/house" component={House} />
 
           </div>
         </Router>
