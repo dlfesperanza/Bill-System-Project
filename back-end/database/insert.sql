@@ -84,6 +84,7 @@ insert into `bill`
 	insert into `bill_author` values(3224, 16);
 	insert into `bill_subject` values(3224, "R.A. No. 8972");
 
+
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (17, 'Cory', 'Stockney', 'Charrisson', str_to_date('10/13/1955', '%c/%d/%Y'), 'F', 'HOUSEMEMBER', 27416, 2, str_to_date('4/1/2011', '%c/%d/%Y'), str_to_date('8/22/2017', '%c/%d/%Y'));
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (18, 'Mariska', 'Carbry', 'Tills', str_to_date('06/21/1957', '%c/%d/%Y'), 'F', 'HOUSEMEMBER', 33364, 2, str_to_date('6/7/2014', '%c/%d/%Y'), str_to_date('12/29/2006', '%c/%d/%Y'));
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (19, 'Lari', 'Gladden', 'Haworth', str_to_date('09/23/1956', '%c/%d/%Y'), 'F', 'SENATOR', 25672, 2, str_to_date('8/9/2007', '%c/%d/%Y'), str_to_date('11/3/2011', '%c/%d/%Y'));

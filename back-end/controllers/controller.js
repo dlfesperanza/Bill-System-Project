@@ -122,7 +122,6 @@ exports.searchLegislator = (req, res) => {
 			}queryline += 'type like ' + "'" + type_ + "'";
 		}
 	}
-
 	queryline += ";";
 
 	db.query(queryline, [], (err, result) => {
