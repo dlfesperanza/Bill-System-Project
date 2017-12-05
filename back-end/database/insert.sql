@@ -1,36 +1,19 @@
-insert into `legislator`
-	values(1, 'Aquilino Martin', 'de la Llana', 'Pimentel III', str_to_date('01-20-1964', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2022', '%c-%d-%Y'));
-insert into `legislator`
-	values(2, 'Paolo Benigno', 'Aguirre', 'Aquino IV', str_to_date('05-07-1977', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(3, 'Miriam Palma', 'Defensor', 'Santiago', str_to_date('06-15-1945', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(4, 'Loren Regina', 'Bautista', 'Legarda', str_to_date('01-28-1960', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(5, 'Jose', 'Pimentel' 'Ejercito-Estrada', str_to_date('01-23-1963', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(6, 'Teofisto', 'de Lara', 'Guingona III', str_to_date('04-19-1959', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(7, 'Ramon', '', 'Revilla JR.', str_to_date('09-25-1966', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(8, 'Francis Josepp', 'Guevara', 'Escudero', str_to_date('10-10-1969', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(9, 'Pilar Juliana', 'Schramm', 'Cayetano', str_to_date('03-22-1966', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(10, 'Juan Edgardo', 'Manalang', 'Angara', str_to_date('07-15-1943', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(11, 'Joseph Victor', 'Gomez', 'Ejercito', str_to_date('12-26-1969', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(12, 'Antonio', 'Fuentes', 'Trillanes', str_to_date('08-06-1971', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(13, 'Mary Grace', 'Llamanzares', 'Poe', str_to_date('01-01-1968', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(14, 'Maria Lourdes Nancy', 'Sombillo', 'Binay', str_to_date('05-12-1973', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(15, 'Manuel', 'Mercado', 'Lapid', str_to_date('08-21-1955', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
-insert into `legislator`
-	values(16, 'Ferdinand', 'Romualdez', 'Marcos', str_to_date('09-13-1957', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+insert into `legislator` values(1, 'Aquilino Martin', 'de la Llana', 'Pimentel III', str_to_date('01-20-1964', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2022', '%c-%d-%Y'));
+insert into `legislator` values(2, 'Paolo Benigno', 'Aguirre', 'Aquino IV', str_to_date('05-07-1977', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(3, 'Miriam Palma', 'Defensor', 'Santiago', str_to_date('06-15-1945', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(4, 'Loren Regina', 'Bautista', 'Legarda', str_to_date('01-28-1960', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(5, 'Jose', 'Pimentel' 'Ejercito-Estrada', str_to_date('01-23-1963', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(6, 'Teofisto', 'de Lara', 'Guingona III', str_to_date('04-19-1959', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(7, 'Ramon', '', 'Revilla JR.', str_to_date('09-25-1966', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(8, 'Francis Joseph', 'Guevara', 'Escudero', str_to_date('10-10-1969', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(9, 'Pilar Juliana', 'Schramm', 'Cayetano', str_to_date('03-22-1966', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(10, 'Juan Edgardo', 'Manalang', 'Angara', str_to_date('07-15-1943', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(11, 'Joseph Victor', 'Gomez', 'Ejercito', str_to_date('12-26-1969', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(12, 'Antonio', 'Fuentes', 'Trillanes', str_to_date('08-06-1971', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(13, 'Mary Grace', 'Llamanzares', 'Poe', str_to_date('01-01-1968', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(14, 'Maria Lourdes Nancy', 'Sombillo', 'Binay', str_to_date('05-12-1973', '%c-%d-%Y'), 'F', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(15, 'Manuel', 'Mercado', 'Lapid', str_to_date('08-21-1955', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
+insert into `legislator` values(16, 'Ferdinand', 'Romualdez', 'Marcos', str_to_date('09-13-1957', '%c-%d-%Y'), 'M', 'SENATOR', 19550, 3, str_to_date('08-01-2016', '%c-%d-%Y'), str_to_date('08-01-2019', '%c-%d-%Y'));
 
 insert into `bill`
 	values(3220, 'TAX AND DUTIES EXEMPTIONS THE PRIZES OF MISS UNIVERSE PIA WURTZBACH',
@@ -66,6 +49,7 @@ insert into `bill`
 		'AN ACT STRENGTHENING THE PHILIPPINE COMPREHENSIVE POLICY ON HIV AND AIDS PREVENTION, TREATMENT, CARE, AND SUPPORT, REPEALING FOR THE PURPOSE REPUBLIC ACT NO. 8504, OTHERWISE KNOWN AS THE PHILIPPINE AIDS PREVENTION AND CONTROL ACT OF 1998, AND APPROPRIATING FUNDS THEREFORE',
 		'SENATE BILL', 'NATIONAL', 'PENDING', '2ND', str_to_date('2016-02-03', '%Y-%c-%d'));
 	insert into `bill_author` values(3223, 1);
+	insert into `bill_author` values(3223, 2);
 	insert into `bill_author` values(3223, 3);
 	insert into `bill_author` values(3223, 4);
 	insert into `bill_author` values(3223, 5);
@@ -76,14 +60,12 @@ insert into `bill`
 	insert into `bill_author` values(3223, 13);
 	insert into `bill_author` values(3223, 14);
 	insert into `bill_author` values(3223, 15);
-	insert into `bill_author` values(3223, 2);
 
 insert into `bill`
 	values(3224, "SOLO PARENTS AND THEIR CHILDREN'S WELFARE ACT", 'AN ACT AMENDING REPUBLIC ACT NO. 8972, OTHERWISE KNOWN AS THE SOLO PARENTS WELFARE ACT OF 2000, AND FOR OTHER PURPOSES',
 		'SENATE BILL', 'NATIONAL', 'ARCHIVED', null, str_to_date('02-09-2016', '%c-%d-%Y'));
 	insert into `bill_author` values(3224, 16);
 	insert into `bill_subject` values(3224, "R.A. No. 8972");
-
 
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (17, 'Cory', 'Stockney', 'Charrisson', str_to_date('10/13/1955', '%c/%d/%Y'), 'F', 'HOUSEMEMBER', 27416, 2, str_to_date('4/1/2011', '%c/%d/%Y'), str_to_date('8/22/2017', '%c/%d/%Y'));
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (18, 'Mariska', 'Carbry', 'Tills', str_to_date('06/21/1957', '%c/%d/%Y'), 'F', 'HOUSEMEMBER', 33364, 2, str_to_date('6/7/2014', '%c/%d/%Y'), str_to_date('12/29/2006', '%c/%d/%Y'));
@@ -170,22 +152,22 @@ insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofte
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (99, 'Lona', 'Belch', 'Bell', str_to_date('11/14/1967', '%c/%d/%Y'), 'F', 'HOUSEMEMBER', 36251, 2, str_to_date('1/28/2007', '%c/%d/%Y'), str_to_date('4/25/2012', '%c/%d/%Y'));
 insert into legislator (empid, fname, mname, lname, bday, sex, type, sal, noofterms, termstart, termend) values (100, 'Fowler', 'Stainer', 'Poor', str_to_date('06/20/1930', '%c/%d/%Y'), 'M', 'HOUSEMEMBER', 36570, 0, str_to_date('6/24/2005', '%c/%d/%Y'), str_to_date('4/15/2014', '%c/%d/%Y'));
 
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (1, 'Recoverable System Loss Act', 'An Act Reducing the Cap of Recoverable System Loss Rate and for Other Purposes', 'House Bill', 'National', 'Pending', '2nd', str_to_date('04/11/2017', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (1, 'Diverting Attention from Data in Project', 'Act to divert attention from dummy data included in project and focus on functionality', 'House Bill', 'National', 'Pending', '2nd', str_to_date('04/11/2017', '%c/%d/%Y'));
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (2, 'Parking Space for Handicapped Persons Act of 2017', 'An Act Mandating the Provision of Exclusive Parking Space for Handicapped Persons and Penalizing the Unauthorized Use Thereof', 'House Bill', 'National', 'Pending', '3rd', str_to_date('08/26/2016', '%c/%d/%Y'));
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (3, 'Nutritional Information Disclosure Act of 2017', 'An Act Requiring the Disclosure of Nutritional Information in Menus of Food Service Establishments', 'House Bill', 'National', 'Pending', '2nd', str_to_date('06/30/2014', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (4, '', '', 'House Bill', 'National', 'Pending', '1st', str_to_date('08/01/2017', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (5, '', '', 'House Bill', 'National', 'Pending', '3rd', str_to_date('07/14/2013', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (6, '', '', 'Senate Bill', 'National', 'Pending', '3rd', str_to_date('03/01/2015', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (7, '', '', 'House Bill', 'National', 'Passed', '3rd', str_to_date('12/24/2012', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (8, '', '', 'Senate Bill', 'National', 'Pending', '3rd', str_to_date('04/14/2013', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (9, '', '', 'House Bill', 'National', 'Pending', '1st', str_to_date('03/18/2014', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (10, '', '', 'Senate Bill', 'National', 'Pending', '2nd', str_to_date('05/15/2015', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (11, '', '', 'Senate Bill', 'National', 'Pending', '1st', str_to_date('08/04/2013', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (12, '', '', 'House Bill', 'National', 'Passed', '1st', str_to_date('07/28/2016', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (13, '', '', 'Senate Bill', 'National', 'Pending', '3rd', str_to_date('02/27/2010', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (14, '', '', 'House Bill', 'National', 'Pending', '2nd', str_to_date('06/07/2016', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (15, '', '', 'House Bill', 'National', 'Passed', '2nd', str_to_date('11/08/2012', '%c/%d/%Y'));
-insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (16, '', '', 'Senate Bill', 'National', 'Pending', '1st', str_to_date('05/08/2017', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (4, 'Clean Code', 'Act to create understandable and modifiable code', 'House Bill', 'National', 'Pending', '1st', str_to_date('08/01/2017', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (5, 'Refactoring condensed code', 'Act to force programmers to create smaller methods and functions', 'House Bill', 'National', 'Pending', '3rd', str_to_date('07/14/2013', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (6, 'Use of distributed model of repositories', 'creating distributed repository with one central repository on cloud server', 'Senate Bill', 'National', 'Pending', '3rd', str_to_date('03/01/2015', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (7, 'Copyright', 'Intellectual property assurance', 'House Bill', 'National', 'Passed', '3rd', str_to_date('12/24/2012', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (8, 'Randomly Generated Data', 'Leila de Lima alleged sex video', 'Senate Bill', 'National', 'Pending', '3rd', str_to_date('04/14/2013', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (9, 'Meaningless text', 'Contents of Mocha Uson Blog', 'House Bill', 'National', 'Pending', '1st', str_to_date('03/18/2014', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (10, 'Discriminative Factor', '', 'Senate Bill', 'National', 'Pending', '2nd', str_to_date('05/15/2015', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (11, 'Platform Independence', 'Project build should be runnable on multiple software platforms', 'Senate Bill', 'National', 'Pending', '1st', str_to_date('08/04/2013', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (12, 'Delivery of ring to Mordor', 'Act to destroy the Dark Lord, Sauron', 'House Bill', 'National', 'Passed', '1st', str_to_date('07/28/2016', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (13, 'Forming Alliance with China', 'Domestication of Philippines as pet', 'Senate Bill', 'National', 'Pending', '3rd', str_to_date('02/27/2010', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (14, 'Abolishment of Military Regimes', '', 'House Bill', 'National', 'Pending', '2nd', str_to_date('06/07/2016', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (15, 'Recoverable System Loss Act', 'An Act Reducing the Cap of Recoverable System Loss Rate and for Other Purposes', 'House Bill', 'National', 'Passed', '2nd', str_to_date('11/08/2012', '%c/%d/%Y'));
+insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (16, 'Employee Wellness', 'Act to prioritize health and sleep of employees', 'Senate Bill', 'National', 'Pending', '1st', str_to_date('05/08/2017', '%c/%d/%Y'));
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (17, '', '', 'Senate Bill', 'National', 'Passed', '3rd', str_to_date('03/08/2012', '%c/%d/%Y'));
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (18, '', '', 'House Bill', 'National', 'Passed', '2nd', str_to_date('06/24/2015', '%c/%d/%Y'));
 insert into bill (billno, title, body, billtype, scope, status, reading, datefiled) values (19, '', '', 'Senate Bill', 'National', 'Passed', '3rd', str_to_date('06/15/2017', '%c/%d/%Y'));
@@ -422,103 +404,103 @@ insert into bill_author (billno, empid) values (42, 5);
 insert into bill_author (billno, empid) values (33, 35);
 insert into bill_author (billno, empid) values (5, 54);
 
-insert into bill_subject (billno, subject) values (55, '');
-insert into bill_subject (billno, subject) values (80, '');
-insert into bill_subject (billno, subject) values (88, '');
-insert into bill_subject (billno, subject) values (74, '');
-insert into bill_subject (billno, subject) values (48, '');
-insert into bill_subject (billno, subject) values (21, '');
-insert into bill_subject (billno, subject) values (2, '');
-insert into bill_subject (billno, subject) values (12, '');
-insert into bill_subject (billno, subject) values (28, '');
-insert into bill_subject (billno, subject) values (67, '');
-insert into bill_subject (billno, subject) values (8, '');
-insert into bill_subject (billno, subject) values (19, '');
-insert into bill_subject (billno, subject) values (100, '');
-insert into bill_subject (billno, subject) values (49, '');
-insert into bill_subject (billno, subject) values (77, '');
-insert into bill_subject (billno, subject) values (13, '');
-insert into bill_subject (billno, subject) values (31, '');
-insert into bill_subject (billno, subject) values (26, '');
-insert into bill_subject (billno, subject) values (65, '');
-insert into bill_subject (billno, subject) values (14, '');
-insert into bill_subject (billno, subject) values (24, '');
-insert into bill_subject (billno, subject) values (60, '');
-insert into bill_subject (billno, subject) values (71, '');
-insert into bill_subject (billno, subject) values (74, '');
-insert into bill_subject (billno, subject) values (36, '');
-insert into bill_subject (billno, subject) values (91, '');
-insert into bill_subject (billno, subject) values (54, '');
-insert into bill_subject (billno, subject) values (26, '');
-insert into bill_subject (billno, subject) values (6, '');
-insert into bill_subject (billno, subject) values (77, '');
-insert into bill_subject (billno, subject) values (50, '');
-insert into bill_subject (billno, subject) values (86, '');
-insert into bill_subject (billno, subject) values (40, '';
-insert into bill_subject (billno, subject) values (71, '');
-insert into bill_subject (billno, subject) values (12, '');
-insert into bill_subject (billno, subject) values (62, '');
-insert into bill_subject (billno, subject) values (14, '');
-insert into bill_subject (billno, subject) values (77, '');
-insert into bill_subject (billno, subject) values (49, '');
-insert into bill_subject (billno, subject) values (17, '');
-insert into bill_subject (billno, subject) values (93, '');
-insert into bill_subject (billno, subject) values (39, '');
-insert into bill_subject (billno, subject) values (36, '');
-insert into bill_subject (billno, subject) values (14, '');
-insert into bill_subject (billno, subject) values (97, '');
-insert into bill_subject (billno, subject) values (50, '');
-insert into bill_subject (billno, subject) values (40, '');
-insert into bill_subject (billno, subject) values (100, '');
-insert into bill_subject (billno, subject) values (11, '');
-insert into bill_subject (billno, subject) values (36, '');
-insert into bill_subject (billno, subject) values (21, '');
-insert into bill_subject (billno, subject) values (17, '');
-insert into bill_subject (billno, subject) values (47, '');
-insert into bill_subject (billno, subject) values (30, '');
-insert into bill_subject (billno, subject) values (9, '');
-insert into bill_subject (billno, subject) values (25, '');
-insert into bill_subject (billno, subject) values (14, '');
-insert into bill_subject (billno, subject) values (79, '');
-insert into bill_subject (billno, subject) values (36, '');
-insert into bill_subject (billno, subject) values (26, '');
-insert into bill_subject (billno, subject) values (80, '');
-insert into bill_subject (billno, subject) values (31, '');
-insert into bill_subject (billno, subject) values (38, '');
-insert into bill_subject (billno, subject) values (40, '');
-insert into bill_subject (billno, subject) values (41, '');
-insert into bill_subject (billno, subject) values (94, '');
-insert into bill_subject (billno, subject) values (97, '');
-insert into bill_subject (billno, subject) values (67, '');
-insert into bill_subject (billno, subject) values (41, '');
-insert into bill_subject (billno, subject) values (12, '');
-insert into bill_subject (billno, subject) values (98, '');
-insert into bill_subject (billno, subject) values (49, '');
-insert into bill_subject (billno, subject) values (12, '');
-insert into bill_subject (billno, subject) values (57, '');
-insert into bill_subject (billno, subject) values (29, '');
-insert into bill_subject (billno, subject) values (52, '');
-insert into bill_subject (billno, subject) values (49, '');
-insert into bill_subject (billno, subject) values (95, '');
-insert into bill_subject (billno, subject) values (9, '');
-insert into bill_subject (billno, subject) values (5, '');
-insert into bill_subject (billno, subject) values (53, '');
-insert into bill_subject (billno, subject) values (10, '');
-insert into bill_subject (billno, subject) values (9, '');
-insert into bill_subject (billno, subject) values (55, '');
-insert into bill_subject (billno, subject) values (17, '');
-insert into bill_subject (billno, subject) values (85, '');
-insert into bill_subject (billno, subject) values (23, '');
-insert into bill_subject (billno, subject) values (90, '');
-insert into bill_subject (billno, subject) values (15, '');
-insert into bill_subject (billno, subject) values (57, '');
-insert into bill_subject (billno, subject) values (92, '');
-insert into bill_subject (billno, subject) values (46, '');
-insert into bill_subject (billno, subject) values (86, '');
-insert into bill_subject (billno, subject) values (55, '');
-insert into bill_subject (billno, subject) values (53, '');
-insert into bill_subject (billno, subject) values (15, '');
-insert into bill_subject (billno, subject) values (75, '');
-insert into bill_subject (billno, subject) values (74, '');
-insert into bill_subject (billno, subject) values (8, '');
-insert into bill_subject (billno, subject) values (68, '');
+insert into bill_subject (billno, subject) values (55, 'subject');
+insert into bill_subject (billno, subject) values (80, 'cmsc127');
+insert into bill_subject (billno, subject) values (88, 'cmsc124');
+insert into bill_subject (billno, subject) values (74, 'ganda ni mam kat');
+insert into bill_subject (billno, subject) values (48, 'cmsc100');
+insert into bill_subject (billno, subject) values (21, 'cmsc131');
+insert into bill_subject (billno, subject) values (2, 'sin tax on banana');
+insert into bill_subject (billno, subject) values (12, 'node js illegalization');
+insert into bill_subject (billno, subject) values (28, 'marijuana legalized');
+insert into bill_subject (billno, subject) values (67, 'excise tax on pork');
+insert into bill_subject (billno, subject) values (8, 'tax exemption');
+insert into bill_subject (billno, subject) values (19, 'academic excellence');
+insert into bill_subject (billno, subject) values (100, 'science progression');
+insert into bill_subject (billno, subject) values (49, 'human rights');
+insert into bill_subject (billno, subject) values (77, 'health');
+insert into bill_subject (billno, subject) values (13, 'economy');
+insert into bill_subject (billno, subject) values (31, 'phlo1');
+insert into bill_subject (billno, subject) values (26, 'depression deletion');
+insert into bill_subject (billno, subject) values (65, 'anxiety');
+insert into bill_subject (billno, subject) values (14, 'stress');
+insert into bill_subject (billno, subject) values (24, 'caffeine tax');
+insert into bill_subject (billno, subject) values (60, 'mental health');
+insert into bill_subject (billno, subject) values (71, 'reproductive');
+insert into bill_subject (billno, subject) values (74, 'sustenance');
+insert into bill_subject (billno, subject) values (36, 'housing');
+insert into bill_subject (billno, subject) values (91, 'money subsidy');
+insert into bill_subject (billno, subject) values (54, 'jobs');
+insert into bill_subject (billno, subject) values (26, 'luv you maam');
+insert into bill_subject (billno, subject) values (6, 'ipasa mo kami');
+insert into bill_subject (billno, subject) values (77, 'ni dannah');
+insert into bill_subject (billno, subject) values (50, 'lorem');
+insert into bill_subject (billno, subject) values (86, 'ipsum');
+insert into bill_subject (billno, subject) values (40, 'dolor';
+insert into bill_subject (billno, subject) values (71, 'sit doggo');
+insert into bill_subject (billno, subject) values (12, 'amet');
+insert into bill_subject (billno, subject) values (62, 'much creative');
+insert into bill_subject (billno, subject) values (14, 'very subject');
+insert into bill_subject (billno, subject) values (77, 'wowable');
+insert into bill_subject (billno, subject) values (49, 'chuchu');
+insert into bill_subject (billno, subject) values (17, 'charaughter');
+insert into bill_subject (billno, subject) values (93, 'this is sparta');
+insert into bill_subject (billno, subject) values (39, 'war funds');
+insert into bill_subject (billno, subject) values (36, 'soldier training');
+insert into bill_subject (billno, subject) values (14, 'ROTC');
+insert into bill_subject (billno, subject) values (97, 'sports');
+insert into bill_subject (billno, subject) values (50, 'pork');
+insert into bill_subject (billno, subject) values (40, 'drug eradication');
+insert into bill_subject (billno, subject) values (100, 'construction');
+insert into bill_subject (billno, subject) values (11, 'barely meaningful');
+insert into bill_subject (billno, subject) values (36, 'hindi naman');
+insert into bill_subject (billno, subject) values (21, 'ata kami nagquery ng');
+insert into bill_subject (billno, subject) values (17, 'subjects');
+insert into bill_subject (billno, subject) values (47, 'basic needs');
+insert into bill_subject (billno, subject) values (30, 'free tuition');
+insert into bill_subject (billno, subject) values (9, 'human rights');
+insert into bill_subject (billno, subject) values (25, 'criminal rights');
+insert into bill_subject (billno, subject) values (14, 'sustenance');
+insert into bill_subject (billno, subject) values (79, 'subsidy');
+insert into bill_subject (billno, subject) values (36, 'importation tax');
+insert into bill_subject (billno, subject) values (26, 'tax exemption');
+insert into bill_subject (billno, subject) values (80, 'pregnant women health');
+insert into bill_subject (billno, subject) values (31, 'vaccination');
+insert into bill_subject (billno, subject) values (38, 'realty');
+insert into bill_subject (billno, subject) values (40, 'housing');
+insert into bill_subject (billno, subject) values (41, 'college education');
+insert into bill_subject (billno, subject) values (94, 'senior high school');
+insert into bill_subject (billno, subject) values (97, 'exportation');
+insert into bill_subject (billno, subject) values (67, 'importation');
+insert into bill_subject (billno, subject) values (41, 'wildlife protection');
+insert into bill_subject (billno, subject) values (12, 'preservation');
+insert into bill_subject (billno, subject) values (98, 'mining regulations');
+insert into bill_subject (billno, subject) values (49, 'watershed preservation');
+insert into bill_subject (billno, subject) values (12, 'aesthetic');
+insert into bill_subject (billno, subject) values (57, 'construction');
+insert into bill_subject (billno, subject) values (29, 'MRT');
+insert into bill_subject (billno, subject) values (52, 'transportation');
+insert into bill_subject (billno, subject) values (49, 'infrastracture');
+insert into bill_subject (billno, subject) values (95, 'building');
+insert into bill_subject (billno, subject) values (9, 'dannah');
+insert into bill_subject (billno, subject) values (5, 'louise');
+insert into bill_subject (billno, subject) values (53, 'esperanza');
+insert into bill_subject (billno, subject) values (10, 'kat');
+insert into bill_subject (billno, subject) values (9, 'loren');
+insert into bill_subject (billno, subject) values (55, 'tan');
+insert into bill_subject (billno, subject) values (17, 'reggie');
+insert into bill_subject (billno, subject) values (85, 'neil');
+insert into bill_subject (billno, subject) values (23, 'recario');
+insert into bill_subject (billno, subject) values (90, 'nepotism');
+insert into bill_subject (billno, subject) values (15, 'anti-dynasty');
+insert into bill_subject (billno, subject) values (57, 'lorem');
+insert into bill_subject (billno, subject) values (92, 'integer');
+insert into bill_subject (billno, subject) values (46, 'vide cor meum');
+insert into bill_subject (billno, subject) values (86, "jeaux d'eaux");
+insert into bill_subject (billno, subject) values (55, 'canon');
+insert into bill_subject (billno, subject) values (53, 'chopin');
+insert into bill_subject (billno, subject) values (15, 'randomization');
+insert into bill_subject (billno, subject) values (75, 'abstraction');
+insert into bill_subject (billno, subject) values (74, 'organ donations');
+insert into bill_subject (billno, subject) values (8, 'real property');
+insert into bill_subject (billno, subject) values (68, 'value-added tax ');
